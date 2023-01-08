@@ -10,12 +10,12 @@ public class ControleTrafegoAereo {
         return instancia;
     }
 
-    public String recebePermissaoDePousar(String mensagem){
+    public String recebePermissaoDoAeroporto(String mensagem){
         return  "Contato recebido.\n"+
                 "Permissão de pousar concedida\n"+
                 ">>" +  Aeroporto.getInstancia().recebePermissaoDePousar(mensagem);
     }
-    public String recebeAvisoDeProblemasNaPista(String mensagem){
+    public String recebeAvisoDeProblemasNaPistaAeroporto(String mensagem){
         return  "Contato recebido.\n"+
                 "Problemas na pista.\n"+
                 ">>" +  Aeroporto.getInstancia().recebeAvisoDeProblemasNaPista(mensagem);
